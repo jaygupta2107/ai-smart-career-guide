@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Smart Career Guide</title>
+
+<link rel="stylesheet" href="style.css" />
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" type="image/png" href="icons/app-icon.png" />
+<meta name="theme-color" content="#0a0f24" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="container">
+  <h1 class="title">AI Smart Career Guide</h1>
+  <p class="subtitle">10th Students Career Predictor (Manual Input)</p>
+
+  <div class="card">
+    <h2>Student Information</h2>
+
+    <label>Name:</label>
+    <input id="name" placeholder="Enter your name" />
+
+    <label>Age:</label>
+    <input id="age" type="number" placeholder="Age" />
+
+    <label>Marks (Percentage):</label>
+    <input id="marks" type="number" placeholder="Ex: 70" />
+
+    <label>Interests:</label>
+    <textarea id="interests" placeholder="Ex: Maths, Drawing, Cars, Technology"></textarea>
+
+    <label>Skills:</label>
+    <textarea id="skills" placeholder="Ex: Problem solving, Creativity"></textarea>
+
+    <button onclick="generateCareer()">Generate Career Path</button>
+    <button onclick="saveReport()">Save Report</button>
+    <button onclick="window.print()">Download as PDF</button>
+    <button onclick="clearReport()">Clear Report</button>
+
+  </div>
+
+  <div id="results"></div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js")
+    .then(reg => console.log("Service Worker Registered", reg.scope))
+    .catch(err => console.error("Service Worker Registration Failed", err));
+}
+</script>
+
+
+
+</body>
+</html>

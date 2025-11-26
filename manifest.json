@@ -1,0 +1,17 @@
+{
+  "id": "/index.html",
+  "name": "AI Smart Career Guide",
+  "short_name": "CareerGuide",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#050a19",
+  "theme_color": "#00eaff",
+  "icons": [
+    {
+      "src": "/icons/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
