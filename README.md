@@ -39,7 +39,8 @@ This project works as:
 - Local Storage
 - Git & GitHub
 
-----## 📁 Project Structure
+----
+## 📁 Project Structure
 
 AI Smart Career Guide for Students/
 │
@@ -67,4 +68,5 @@ AI Smart Career Guide for Students/
 ├── sw.js
 
 └── README.md
+
 
