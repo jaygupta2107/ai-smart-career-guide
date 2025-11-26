@@ -43,16 +43,28 @@ This project works as:
 
 AI Smart Career Guide for Students/
 │
+
 ├── icons/
+
 │   └── app-icon.png
+
 │
+
 ├── .vscode/
+
 │   └── launch.json
+
 │
+
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 ├── manifest.json
+
 ├── sw.js
+
 └── README.md
 
